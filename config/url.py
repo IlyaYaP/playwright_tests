@@ -1,2 +1,2 @@
 class Url:
-    DOMIAN = 'https://google.com'
+    DOMIAN = 'https://demowebshop.tricentis.com/'
