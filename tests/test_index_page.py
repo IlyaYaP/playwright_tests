@@ -1,6 +1,7 @@
 import pytest
 import pages
 import time
+import config
 
 class TestFooter:
 
