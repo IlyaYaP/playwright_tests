@@ -1,4 +1,3 @@
-from playwright.sync_api import Page
 import config
 import pages
 
