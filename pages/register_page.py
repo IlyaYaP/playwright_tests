@@ -1,4 +1,4 @@
-from playwright.sync_api import Page
+import allure
 import config
 import pages
 import components
@@ -10,4 +10,4 @@ class RegisterPage:
         pages.base_page.open_page(config.url.DOMIAN, page)
     
     def open_register_page(self, page) -> None:
-        components.top_menu.open_books(page) 
+        components.header_links.open_register_page(page)
