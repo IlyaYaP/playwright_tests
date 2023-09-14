@@ -19,3 +19,6 @@ class RegisterPage:
         pages.base_page.fill_the_field(page, 'First name', 'Ilya')
         pages.base_page.fill_the_field(page, 'Last name', 'Kozyrev')
         pages.base_page.fill_the_field(page, 'Email', 'IlKoz@gmail.com')
+        pages.base_page.fill_the_field_get_by_role(page, '#Password', 'Ilya_koz12345')
+        # pages.base_page.fill_the_field(page, 'Confirm password', 'Ilya_koz12345')
+        #поменять название
