@@ -4,8 +4,8 @@ import allure
 
 class HeaderLinks:
 
-    def open_register_page(self, page: Page) -> None:
-        with allure.step('Открываем страницу регистрации.'):
+    def open_register_page_header_menu(self, page: Page) -> None:
+        with allure.step('Открываем страницу регистрации, нажимая на кнопку Register header.'):
             page.locator("//a[contains(text(), 'Register')]").click()
 
 
