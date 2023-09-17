@@ -1,4 +1,5 @@
 from playwright.sync_api import Page
+from playwright.sync_api import expect
 
 
 class BasePage:
@@ -17,3 +18,6 @@ class BasePage:
 
     def fill_the_field(self, page: Page, locator, input_value) -> None:
         page.locator(locator).fill(input_value)
+
+    def expect_to_contain_text(self, page: Page, locator, text) -> None:
+        expect(page.locator(locator)).to_contain_text(text)

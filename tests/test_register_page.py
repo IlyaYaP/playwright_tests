@@ -10,4 +10,6 @@ class TestFooter:
         pages.index_page.open_index_page(page)
         pages.register_page.open_register_page(page)
         pages.register_page.filling_registration_form(page)
-        time.sleep(5)
+        pages.register_page.should_be_successful_register_text(page)
+        time.sleep(10)
+
