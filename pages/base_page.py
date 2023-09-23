@@ -21,3 +21,6 @@ class BasePage:
 
     def expect_to_contain_text(self, page: Page, locator, text) -> None:
         expect(page.locator(locator)).to_contain_text(text)
+
+    def get_text(self, page: Page, locator) -> None:
+        print(page.locator(locator).text_content())

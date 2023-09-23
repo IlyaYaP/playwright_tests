@@ -1,15 +1,14 @@
-import pytest
 import pages
 import time
-import config
-import components
+import pytest
 
-class TestFooter:
 
+class TestRegisterPage:
+
+    @pytest.mark.register_page_test()
     def test_register_page(self, page):
         pages.index_page.open_index_page(page)
         pages.register_page.open_register_page(page)
         pages.register_page.filling_registration_form(page)
         pages.register_page.should_be_successful_register_text(page)
-        time.sleep(10)
-
+        time.sleep(40)

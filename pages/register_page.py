@@ -48,9 +48,10 @@ class RegisterPage:
             pages.base_page.click(page, self._REGISTER_BUTTON_LOCATOR)
 
     def should_be_successful_register_text(self, page):
-        pages.base_page.expect_to_contain_text(page,
-                                               self._REGISTER_TEXT_LOCATOR,
-                                               'Your registration completed')
+        with allure.step('Проверяем, что регистрация прошла успешно.'):
+            pages.base_page.expect_to_contain_text(page,
+                                                   self._REGISTER_TEXT_LOCATOR,
+                                                   'Your registration completed')
 
 
 
