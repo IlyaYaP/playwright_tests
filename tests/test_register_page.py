@@ -1,5 +1,4 @@
 import pages
-import time
 import pytest
 
 
@@ -11,4 +10,3 @@ class TestRegisterPage:
         pages.register_page.open_register_page(page)
         pages.register_page.filling_registration_form(page)
         pages.register_page.should_be_successful_register_text(page)
-        time.sleep(40)

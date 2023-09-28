@@ -18,3 +18,7 @@ class TopMenu:
     def open_books(self, page: Page) -> None:
         with allure.step('Открываем вкладку Books в меню header.'):
             page.locator("//ul[@class='top-menu']//a[contains(text(), 'Books')]").click()
+
+    def open_computers(self, page: Page) -> None:
+        with allure.step('Открываем вкладку Computers в меню header.'):
+            page.locator("//ul[@class='top-menu']//a[contains(text(), 'Computers')]").click()

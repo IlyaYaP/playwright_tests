@@ -1,7 +1,6 @@
 import allure
 import pages
 import components
-from faker import Faker
 
 
 class LogInPage:
